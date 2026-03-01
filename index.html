@@ -7,25 +7,25 @@ STEP 1: Add the required HTML5 skeleton
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophia Orwig</title>
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <!-- =========================================================
     STEP 2: Build the “top area” (site name + navigation) using simple HTML
     ========================================================= -->
-  <header> 
+  <header class='site-header'> 
+    <div class='header-inner container'>
+    <h1 class="brand"> Sophia Orwig </h1>
 
-    <h1> Sophia Orwig </h1>
-
-    <nav> 
-      <ul>
-          <li> <a href="#"> Home </a> </li>
-          <li> <a href="#"> Faith </a> </li>
-          <li> <a href="#"> Travel </a> </li>
-          <li> <a href="#"> Marketing </a> </li>
-        </ul>
+    <nav class='site-nav'> 
+          <a href="#"> Home </a> 
+          <a href="#"> Faith </a> 
+          <a href="#"> Travel </a> 
+          <a href="#"> Marketing </a> 
+      
       </nav>
+    </div>
   </header>
 
 
@@ -33,41 +33,51 @@ STEP 1: Add the required HTML5 skeleton
     STEP 3: Hero section + “Get Started button” as a link
     ========================================================= -->
 
-  <section> 
-    <img src="images/hero.jpeg" alt="...">
-    <h2> Welcome - All About Sophia Orwig </h2> 
+  <section class='hero'>
+    <div class='hero-content'> 
+      <h2 class='hero-h2'> Welcome - All About Sophia Orwig </h2> 
 
-    <a href="#"> Get Started </a>
+      <a class='btn btn-dark' href="#"> Get Started </a>
+  </div>
   </section>
 
     <!-- =========================================================
     STEP 4: Features section (3 blocks) + featured content section
     ========================================================= -->
   
-  <section> 
+  <section class='features'> 
+    <div class='container'>
     <h2> Features </h2>
-      <div> 
+      <div class='features-grid'> 
+       
+        <div class='feature'>
         <h3> Home </h3> 
           <p> I was born in Minnesota. I grew up and lived in Wayzata my whole life until moving away to college. </p>
-      </div>
+        </div>
 
-      <div> 
+        <div class='feature'>
         <h3> Faith </h3>
           <p> I am a Christian, and my faith is the most important part of my life. I am a student leader in a college ministry, The Salt Company, and it has impacted my life so much throughout college! </p>
-      </div>
+        </div>
 
-      <div> 
+        <div class='feature'>
         <h3> Important to Me </h3>
           <p> My family and friends are so important to me, and I cherish them everyday. They are the people I hold close to my heart. </p>
+        </div>
       </div>
+    </div>
     </section>
     
-    <section> 
+    <section class='featured'> 
+    <div class='container'>
 
       <h2> Featured Content </h2>
-       <img src="images/selfimage.jpeg" alt="...">
+
+       <img class='featured-img' src="images/selfimage.jpeg" alt="Sophia">
+     
         <p> Hi, my name is Sophia Orwig, and I am a Junior at the University of Wisconsin-Madison. I
             am majoring in Consumer Behavior and Marketplace Studies with certificates in Business, Entrepreneurship, and Digital Studies. I am going to be graduating in the Winter of 2026, and I am interested in working in the marketing industry after I graduate </p>
+      </div>
     </section>
 
 
@@ -75,19 +85,31 @@ STEP 1: Add the required HTML5 skeleton
     STEP 5: Two secondary content blocks + CTA section 
     ========================================================= -->
   
-   <section> 
+   <section class='secondary'> 
+  <div class='container'>
+     
+     <div class="secondary-grid">
       <h2> Hobbies </h2>
-        <article> 
-          <h3> Travel </h3>
-            <p> One thing I love to do in my free time is travel. There are so many cool places I have seen and so many more countries I cannot wait to visit. </p>
-              <img src="images/greece.jpeg" alt="...">>
+        <article class='card'> 
+          <div class='card-text'>
+            <h3> Travel </h3>
+              <p> One thing I love to do in my free time is travel. There are so many cool places I have seen and so many more countries I cannot wait to visit. </p>
+          </div>
+          <div class='card-image img-a'>
+          
+          </div>
         </article>
 
-      <article> 
-        <h3> Cooking & Baking </h3>
-          <p> Something my friends and I love to do together is cook and bake. We always love trying fun new recipes! </p>
-            <img src="images/food.jpeg" alt="..." 
+      <article class='card'> 
+        <div class='card-text'>
+          <h3> Cooking & Baking </h3>
+            <p> Something my friends and I love to do together is cook and bake. We always love trying fun new recipes! </p>
+        </div>
+          <div class='card-image img-b'>
+          </div>
       </article>
+     </div>
+    </div>
     </section>
     
 
@@ -96,19 +118,27 @@ STEP 1: Add the required HTML5 skeleton
     ========================================================= -->
       <br> <br> <br> <br> 
 
-    <a href="#"> Contact Me! </a>
-      <p> 763-370-4527 </p>
-      <p> sophiaorwig@aol.com </p>
+    <footer class="site-footer">
+  <div class="container footer-inner">
 
-    <br> <br> 
+    <div class="footer-left">
+      <p>Contact Me!</p>
+      <p>763-370-4527</p>
+      <p>sophiaorwig@aol.com</p>
+    </div>
 
-         <ul>
-          <li> <a href="#"> Home </a> </li>
-          <li> <a href="#"> Faith </a> </li>
-          <li> <a href="#"> Travel </a> </li>
-          <li> <a href="#"> Marketing </a> </li>
-        </ul>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Links</h4>
+        <a href="#">Home</a>
+        <a href="#">Faith</a>
+        <a href="#">Travel</a>
+        <a href="#">Marketing</a>
+      </div>
+    </div>
 
+  </div>
+</footer>
 
   </body>
 </html>
